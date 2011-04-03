@@ -19,6 +19,7 @@ public final class R {
         public static final int division=0x7f060004;
         public static final int eight=0x7f06000a;
         public static final int equals=0x7f06000f;
+        public static final int exit=0x7f060015;
         public static final int five=0x7f060006;
         public static final int four=0x7f060005;
         public static final int log=0x7f060012;
@@ -43,9 +44,10 @@ public final class R {
         public static final int main_menu=0x7f050000;
     }
     public static final class string {
-        public static final int app_name=0x7f040003;
+        public static final int app_name=0x7f040004;
         public static final int clear_log=0x7f040000;
-        public static final int one=0x7f040002;
+        public static final int exit=0x7f040002;
+        public static final int one=0x7f040003;
         public static final int save_log=0x7f040001;
     }
 }

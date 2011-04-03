@@ -119,6 +119,9 @@ public class CalcTest extends Activity
         case R.id.save_log:
         	logger.save();
             return true;
+        case R.id.exit:
+        	finish();
+            return true;
         default:
             return super.onOptionsItemSelected(item);
         }
