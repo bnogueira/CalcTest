@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="clear_log">Clear Log</string>
+    <string name="save_log">Save Log</string>
+    <string name="one">ONE</string>
+    <string name="app_name">Calculator - Test</string>
+</resources>

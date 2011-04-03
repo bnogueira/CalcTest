@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent" 
+              android:layout_height="fill_parent"
+              android:orientation="vertical" >
+        
+        <EditText
+        	android:id="@+id/total"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+		   	android:background="@android:drawable/editbox_background"
+        	android:layout_below="@id/total"
+        	android:text="0.0"/>
+        	
+		<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:stretchColumns="0,1,2,3">
+    
+    		
+		    <TableRow>
+		        <Button
+		        	android:id="@+id/one"
+		        	android:text="1"
+		        	android:onClick="numberOnClick" />
+		        	
+		        <Button
+		        	android:id="@+id/two"
+		        	android:text="2"
+		        	android:onClick="numberOnClick" />
+		        	
+		        <Button
+		        	android:id="@+id/three"
+		        	android:text="3"
+		        	android:onClick="numberOnClick" />
+		        	
+		        <Button
+		        	android:id="@+id/division"
+		        	android:text="/"
+		        	android:onClick="operationOnClick"/>
+		    </TableRow>
+		    
+		    <TableRow>
+		        <Button
+		        	android:id="@+id/four"
+		        	android:text="4"
+		        	android:onClick="numberOnClick" />
+		        	
+		        <Button
+		        	android:id="@+id/five"
+		        	android:text="5"
+		        	android:onClick="numberOnClick" />
+		        	
+		        <Button
+		        	android:id="@+id/six"
+		        	android:text="6"
+		        	android:onClick="numberOnClick" />
+		        	
+		        <Button
+		        	android:id="@+id/multiply"
+		        	android:text="*" 
+		        	android:onClick="operationOnClick"/>
+		    </TableRow>
+		    
+		    <TableRow>
+		        <Button
+		        	android:id="@+id/seven"
+		        	android:text="7"
+		        	android:onClick="numberOnClick" />
+		        	
+		        <Button
+		        	android:id="@+id/eight"
+		        	android:text="8"
+		        	android:onClick="numberOnClick" />
+		        	
+		        <Button
+		        	android:id="@+id/nine"
+		        	android:text="9"
+		        	android:onClick="numberOnClick" />
+		        	
+		        <Button
+		        	android:id="@+id/minus"
+		        	android:text="-" 
+		        	android:onClick="operationOnClick"/>
+		    </TableRow>
+		    
+		    <TableRow>
+		        <Button
+		        	android:id="@+id/zero"
+		        	android:text="0"
+		        	android:onClick="numberOnClick" />
+		        	
+		        <Button
+		        	android:id="@+id/clear"
+		        	android:text="C" 
+		        	android:onClick="operationOnClick"/>
+		        	
+		        <Button
+		        	android:id="@+id/equals"
+		        	android:text="=" 
+		        	android:onClick="totalOnClick"/>
+		        	
+		        <Button
+		        	android:id="@+id/plus"
+		        	android:text="+" 
+		        	android:onClick="operationOnClick"/>
+		    </TableRow>
+		    
+		</TableLayout>
+		
+		<TextView android:id="@+id/logLabel"
+			android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log:" />
+				
+		<TextView android:id="@+id/log"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="15px" 
+              android:layout_marginRight="15px" 
+              android:scrollbars="vertical"
+              android:text="" />
+              
+</LinearLayout>
+
+
+
+
+
+
+
