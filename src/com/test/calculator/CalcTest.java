@@ -36,18 +36,18 @@ public class CalcTest extends Activity
     {
     	expectingNewNumber = true;
     	
-    	// get total editText
-    	EditText totalEditText = (EditText)findViewById(R.id.total);
+    	// get totalTextView
+    	TextView totalTextView = (TextView)findViewById(R.id.total);
     	
     	// feed MathOperation with current value
     	
-    	String totalText = totalEditText.getText().toString();
+    	String totalText = totalTextView.getText().toString();
     	
     	double newValue = Double.valueOf(totalText);
     	math.setOperand(newValue);
     	
     	// update value
-    	totalEditText.setText(Double.toString(math.getResult()));
+    	totalTextView.setText(Double.toString(math.getResult()));
     }
     
     public void numberOnClick(View view)
@@ -56,17 +56,16 @@ public class CalcTest extends Activity
     	Button b = (Button)view;
     	CharSequence buttonDesc = b.getText();
     	
-    	// get total editText
-    	EditText totalEditText = (EditText)findViewById(R.id.total);
+    	// get totalTextView
+    	TextView totalTextView = (TextView)findViewById(R.id.total);
     	
     	if (expectingNewNumber)
     	{
-    		totalEditText.setText(buttonDesc);
+    		totalTextView.setText(buttonDesc);
     	}
     	else
     	{
-    		totalEditText.setText(totalEditText.getText().append(buttonDesc));
-    		
+    		totalTextView.append(buttonDesc);
     	}
     	
     	expectingNewNumber = false;
@@ -75,7 +74,7 @@ public class CalcTest extends Activity
     public void operationOnClick(View view)
     {
     	expectingNewNumber = true;
-    	EditText totalEditText = (EditText)findViewById(R.id.total);
+    	TextView totalTextView = (TextView)findViewById(R.id.total);
     	
     	// get button pressed
     	Button b = (Button)view;
@@ -87,12 +86,12 @@ public class CalcTest extends Activity
     	if (operation == 'C')
     	{
     		math = new MathOperation(logger);
-    		totalEditText.setText("0.0");
+    		totalTextView.setText("0.0");
     		return;
     	}
     	
     	// get the value
-    	double newValue = Double.valueOf(totalEditText.getText().toString());
+    	double newValue = Double.valueOf(totalTextView.getText().toString());
 
     	// use 
     	math.setOperand(newValue);
