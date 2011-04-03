@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="clear_log">Limpar Log</string>
+    <string name="save_log">Gravar Log</string>
+    <string name="exit">Sair</string>
+    <string name="app_name">Calculator - Test</string>
+</resources>

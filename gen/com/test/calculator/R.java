@@ -44,10 +44,9 @@ public final class R {
         public static final int main_menu=0x7f050000;
     }
     public static final class string {
-        public static final int app_name=0x7f040004;
+        public static final int app_name=0x7f040003;
         public static final int clear_log=0x7f040000;
         public static final int exit=0x7f040002;
-        public static final int one=0x7f040003;
         public static final int save_log=0x7f040001;
     }
 }
